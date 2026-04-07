@@ -1,1 +1,48 @@
-Time Complexity:
+# Time Complexity:
+
+    Time Complexity measures how the runtime of an algorithm grows with the input size (n).
+    -> It does not measure actual time in seconds.
+    -> It measures growth rate (number of operations).
+
+# Need:
+    Different machines --> different speed.
+    So, we compare logic not machine.
+
+
+# Types of Time Complexity:
+
+    1. O(1) : Constant (execution time does not depend on input size).
+
+    2. O(n) : Linear Time (Time grows linearly with the input size).
+
+    3. O(n^2) : Quadratic Time (Usually due to nested loops).
+            Outer loop runs "n" times and inner loop runs "n" times : n * n = n^2.
+
+    4. O(log N) : Logarithmic Time (Appears when input size reduces by half each step).
+            Eg: Binary Search.
+
+    5. O(2^n) : Exponential Time (Bad).
+            Used in naive recursion. (eg: fibonacci).
+
+    6. Big-O, Big-Ω, Big-Θ
+
+        i. Big-O : Worst Case
+        ii. Big-Ω : Best Case
+        iii. Big-Θ : Average Case
+
+
+# Space Complexity:
+    Space complexity measures extra memory used by an algorithm (excluding input).
+    It includes: Variables, Arrays, Recursion Stack and Auxiliary Data Structure.
+
+    1. O(1) : Constant Space
+    2. O(n) : Linear Space.
+
+# Space Complexity in Recursion:
+    Eg: Recursion Fibonacci.
+
+    -> Each recursion call uses stack memory.
+    -> Depth of recursion = n.
+    So, space complexity = O(n).
+
+    Note: Recursion uses stack memory, which increases space complexity.
