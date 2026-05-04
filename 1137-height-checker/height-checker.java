@@ -3,13 +3,13 @@ class Solution {
         int[] expected = heights.clone();
         Arrays.sort(expected);
 
-        int count = 0;
+        int cnt = 0;
         for(int i = 0; i < heights.length; i++){
             if(heights[i] != expected[i]){
-                count++;
+                cnt++;
             }
         }
         
-        return count;
+        return cnt;
     }
 }
